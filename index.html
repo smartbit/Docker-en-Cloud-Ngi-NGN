@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_blank">
+    <title>Docker en Cloud (Ngi-NGN) - 23 maart 2016</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style type="text/css">
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; font-size: 150%; }
+
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      a {
+        text-decoration: none;
+        color: blue;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .red { color: #fa0000; }
+      .gray { color: #ccc; }
+      .small { font-size: 70%; }
+      .big { font-size: 140%; }
+      .underline { text-decoration: underline; }
+      .footnote {
+        position: absolute;
+        bottom: 3em;
+      }
+      .pic {
+        vertical-align: middle;
+        text-align: center;
+        padding: 0 0 0 0 !important;
+      }
+      img {
+        max-width: 100%;
+        max-height: 450px;
+      }
+      .title {
+        vertical-align: middle;
+        text-align: center;
+      }
+      .title {
+        font-size: 2em;
+      }
+      .title .remark-slide-number {
+        font-size: 0.5em;
+      }
+      .quote {
+        background: #eee;
+        border-left: 10px solid #ccc;
+        margin: 1.5em 10px;
+        padding: 0.5em 10px;
+        quotes: "\201C""\201D""\2018""\2019";
+        font-style: italic;
+      }
+      .quote:before {
+        color: #ccc;
+        content: open-quote;
+        font-size: 4em;
+        line-height: 0.1em;
+        margin-right: 0.25em;
+        vertical-align: -0.4em;
+      }
+      .quote p {
+        display: inline;
+      }
+      .icon img {
+        height: 1em;
+      }
+      .exercise {
+        background-color: #eee;
+        background-image: url("keyboard.png");
+        background-size: 1.4em;
+        background-repeat: no-repeat;
+        background-position: 0.2em 0.2em;
+        border: 2px dotted black;
+      }
+      .exercise::before {
+        content: "Exercise:";
+        margin-left: 1.8em;
+      }
+      li p { line-height: 1.25em; }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+class: no-number
+
+class: title
+
+# Docker <br/> en Cloud <br/>
+<!--
+to convert to PDF eg use https://github.com/astefanutti/decktape
+-->
+---
+
+## Logistics
+
+- Hello! I am:
+  <br/>`smartbit at gmail dot com`
+
+
+- All the content is publicly available
+  <br/>(slides, code samples, scripts)
+
+---
+
+
+<!--
+grep '^# ' index.html | grep -v '<br' | tr '#' '-'^C
+-->
+
+## Outline
+
+- Wereld in verandering
+- xyz
+
+.footnote[Note: from now on, unless instructed, **all commands must
+be run from the first VM, `node1`**.]
+
+---
+
+## IT service managment
+
+--
+
+```
+  In de business, de kelder of de cloud
+```
+
+  [David Cannon van Forrester](http://www.automatiseringgids.nl/nieuws/2016/11/it-service-manager-staat-op)
+  <br/>op Ngi-NGN congres 17 maart 2016
+
+
+---
+## Eerste stappen
+
+- stap over naar dagelijks gebruik Linux/Unix, bv
+  - Apple (2008 laptop [€300](http://www.marktplaats.nl/z/computers-en-software/laptops-apple/zo-goed-als-nieuw-gebruikt-macbook-pro-15-inch.html?categoryId=325&priceTo=400%2C00&attributes=S%2C31&attributes=S%2C32&attributes=S%2C2373&attributes=S%2C2369&startDateFrom=always))
+  - Chromebook of [CloudReady](http://www.theverge.com/2016/3/7/11173836/neverware-cloudready-how-to-convert-pc-into-chromebook-free) of [GalliumOS](https://chrx.org/#recommendations)
+  - Ubuntu
+
+--
+
+- leer git en github
+--
+
+- gebruik markdown (.md)
+
+--
+
+- gebruik vim, Sublime, Atom of VS Code
+
+--
+
+- lees Hacker News https://news.ycombinator.com
+
+--
+
+- meetups, cfgmgmtcamp, softwarecircus, DevOpsdays, etc
+  <br/>veelal gratis of goedkoop
+
+--
+
+- neem abonnement op safaribooksonline.com
+
+---
+## Stap twee
+
+Kies een specialisatie
+
+- Databases (Graph, Cassandra, ProgreSQL)
+
+--
+
+- Compute (Kubernetes, Docker, Mesos)
+
+--
+
+- PAAS Platform ()
+
+--
+
+- Storage (CEPH, )
+
+--
+
+- Networking ()
+
+
+---
+
+# Conclusie
+
+- Slechte Nieuws: leve de koeien🐄🐮, dood huisdieren😼🐕
+
+  - it's not all unicorns🦄, ponies, and rainbows
+
+  - *Nee, Docker maakt je baan niet overbodig*
+
+- Good news: ook met Cloud technieken is er werk voor *Operations*
+
+  - building, packaging, distributing apps
+
+  - running distributed systems on clusters
+
+---
+
+## Conway's Law
+```
+  organizations which design systems ...
+  are constrained to produce designs which
+  are copies of the communication structures of these organizations
+```
+M. Conway, 1968
+
+Therefore: Make sure the organization is compatible with the product architecture.
+
+---
+
+## "This is complicated"
+
+
+---
+
+## What's next?
+
+-
+
+---
+
+class: title
+
+# Thanks! <br/> Questions?
+
+### Bart
+
+    </textarea>
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+    var slideshow = remark.create({
+      // Set the slideshow display ratio
+      // Default: '4:3'
+      // Alternatives: '16:9', ...
+      // ratio: '16:9',
+
+      // Navigation options
+      navigation: {
+        // Enable or disable navigating using scroll
+        // Default: true
+        // Alternatives: false
+        scroll: true,
+
+        // Enable or disable navigation using touch
+        // Default: true
+        // Alternatives: false
+        touch: true,
+
+        // Enable or disable navigation using click
+        // Default: false
+        // Alternatives: true
+        click: false
+      },
+
+      // Customize slide number label, either using a format string..
+      slideNumberFormat: 'Slide %current% of %total%',
+      // .. or by using a format function
+      slideNumberFormat: function (current, total) {
+        return 'Slide ' + current + ' van ' + total;
+      },
+
+      // Enable or disable counting of incremental slides in the slide counting
+      countIncrementalSlides: false
+    });
+        </script>
+  </body>
+</html>
