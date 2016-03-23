@@ -6,10 +6,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <style type="text/css">
       @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
-      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
-      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,1000,1000italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,1000,1000italic);
 
-      body { font-family: 'Droid Serif'; font-size: 200%; }
+      body { font-family: 'Droid Serif'; font-size: 400%; }
 
       h1, h2, h3 {
         font-family: 'Yanone Kaffeesatz';
@@ -96,15 +96,28 @@ class: title
 to convert to PDF eg use https://github.com/astefanutti/decktape
 -->
 ---
+# Agenda
 
-## Logistics
+1. Introductie
+2. Cloud Native
+3. Wired-Tired-Expired
+4. Stappen plan
+5. Afsluiting
 
-- Hello! I am:
+
+---
+## Introductie
+
+- Hello! I am: Bart
   <br/>`smartbit at gmail dot com`
 
+- Windows Applicatie Startup, near sourcing ontwikkelteam
 
-- All the content is publicly available
-  <br/>(slides, code samples, scripts)
+- 20 jaar Trainer en Consultant
+
+- switcher (http://blog.scottlowe.org/2016/01/08/full-stack-journey-ep001/)
+
+- meetups en conferenties
 
 ---
 
@@ -113,13 +126,17 @@ to convert to PDF eg use https://github.com/astefanutti/decktape
 grep '^# ' index.html | grep -v '<br' | tr '#' '-'^C
 -->
 
-## Outline
+## Cloud Native
 
-- Wereld in verandering
-- xyz
+- HTML5 of App
+- REST & JSON
+- Microservices
+- Databases
 
-.footnote[Note: from now on, unless instructed, **all commands must
-be run from the first VM, `node1`**.]
+DevOps:
+- Continuous Delivery/Deployment
+- Continuous Integration
+
 
 ---
 
@@ -149,7 +166,7 @@ be run from the first VM, `node1`**.]
 --
 
 |  |microservices|Monolitic|
-|  | |
+
 
 --
 
@@ -190,9 +207,6 @@ ___
 
 VSAN
 
-🙏 NetApp
-
-EMC door Dell vd beurs gehaald → onderzoek
 ---
 
 ## Security
@@ -215,7 +229,7 @@ Oplossing : immutable infrastracture
 
 |Wired | Tired |Expired|
 |:---:|:---:|:----:|
-|L3|L2|L3|
+|L3|VxLAN/GRE|L2|
 --
 
 |40Gbit|10Gbit|1Gbit|
@@ -238,14 +252,25 @@ ___
 - [DevOps Networking Forum](http://www.linux.com/sign-up-to-watch-devops-networking-forum-videos) 17 maart 2016 (videos)
 
 ---
+## Omgevingen
+
+- Docker
+- Kubernetes
+- CoreOS
+- Mesos / Mesposhere
+- Openshift
+- OpenStack
+- CloudStack
+
+
+---
 ##PAAS
 
-|Wired | Tired |Expired|
-|:---:|:---:|:----:|
-
+--
 
 - [Apcera](https://www.apcera.com)
--
+- [Cloud Foundry](http://pivotal.io/platform)
+
 
 ---
 ## Organisatie
@@ -279,7 +304,6 @@ ___
 |[ScrumBan](http://www.agilerecord.com/scrumban-‒-differently-agile/)|KanBan|Scrum|
 --
 
-||||
 
 
 ---
@@ -338,7 +362,13 @@ Kies een specialisatie
 
 - Networking ()
 
+--
 
+- Cloud Security
+
+--
+
+- Backup (& Restore)
 ---
 
 # Conclusie
