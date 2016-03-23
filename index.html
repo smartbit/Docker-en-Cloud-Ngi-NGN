@@ -134,38 +134,153 @@ be run from the first VM, `node1`**.]
   [David Cannon van Forrester](http://www.automatiseringgids.nl/nieuws/2016/11/it-service-manager-staat-op)
   <br/>op Ngi-NGN congres 17 maart 2016
 
+---
+##Compute
+
+|Wired | Tired |Expired|
+|:---:|:---:|:----:|
+|LXD|VM|bare metal|
+--
+
+|containers|VM |Zones |
+--
+
+|OCI |  Docker|LXC |
+--
+
+|  |microservices|Monolitic|
+|  | |
+
+--
+
+
 
 ---
+
 ##Storage
 
 
-|Tired|  |Wired|
-|---|----|---|
-|SAN |  | DAS|
-|15k|  | NVMe|
-|SAS |  |SATA|
-|2.5"|  | 3.5" FH|
-
+|Wired | Tired |Expired|
+|:---:|:---:|:----:|
+|DAS |  iSCSI| SAN|
 --
+
+|JBOD|RAID6|RAID5|
+--
+
+|3.5" FH|  2.5" | 15K rpm|
+--
+
+|SATA | SAS| PATA|
+--
+
+|NVMe | SSD |[SLC](http://0b4af6cdc2f0c5998459-c0245c5c937c5dedcca3f1764ecc9b2f.r43.cf2.rackcdn.com/23105-fast16-papers-schroeder.pdf)|
+<!-- (eMLC drives exhibit higher RBER than the MLC, SLC drives are not generally more reliable than MLC) -->
+--
+
+|[SMR](https://en.wikipedia.org/wiki/Shingled_magnetic_recording)|WORM|TAPE|
+--
+
+|[Quobyte](https://www.openstack.org/news/view/124/quobyte-releases-first-complete-fault-tolerant-storage-solution-for-openstack)|[ZFS](http://open-zfs.org/wiki/Distributions)|NTFS|
+--
+|EMC|NetApp|IBM|
+
+___
+--
+
+VSAN
+
 🙏 NetApp
 
 EMC door Dell vd beurs gehaald → onderzoek
-
-
 ---
 
-## Conway's Law
+## Security
+
+--
+Mark Russinovich
+
+_There are two types of organisations: those who are hacked,_
+
+--
+<br/> _.. and those who don't know they are hacked._
+
+___
+--
+
+Oplossing : immutable infrastracture
+---
+## Networking
+--
+
+|Wired | Tired |Expired|
+|:---:|:---:|:----:|
+|L3|L2|L3|
+--
+
+|40Gbit|10Gbit|1Gbit|
+|QSFP+|QSFP|SFP|
+--
+
+|[OpenDayLight](https://www.opendaylight.org)|Arista|Cisco|
+--
+
+|Ethernet|Infiniband|FC|
+--
+
+|NuageNetwork|NSX|Nicera|
+
+
+___
+--
+
+- [When DevOps & Networking Intersect](https://www.youtube.com/watch?v=4DqxTVloBX8&index=33&list=PLMucAfE0Z-QnHsN_-Ci5e0nNQzItBr9Fz) (video)
+- [DevOps Networking Forum](http://www.linux.com/sign-up-to-watch-devops-networking-forum-videos) 17 maart 2016 (videos)
+
+---
+##PAAS
+
+|Wired | Tired |Expired|
+|:---:|:---:|:----:|
+
+
+- [Apcera](https://www.apcera.com)
+-
+
+---
+## Organisatie
+
+
+### Conway's Law
 ```
-  organizations which design systems ...
+  organizations which design systems
   are constrained to produce designs which
   are copies of the communication structures of these organizations
 ```
 
-
 .right[Melvin Conway, 1968]
 
+--
 
-Therefore: Make sure the organization is compatible with the product architecture.
+_Therefore_ :
+  <br/>Make sure the organization is compatible with the product architecture
+
+--
+
+___
+|Wired | Tired |Expired|
+|:---:|:---:|:----:|
+|No-Ops|DevOps|ITIL|
+--
+
+|Lean|iterative|waterfall|
+--
+
+|[ScrumBan](http://www.agilerecord.com/scrumban-‒-differently-agile/)|KanBan|Scrum|
+--
+
+||||
+
 
 ---
 ## Eerste stappen
@@ -177,10 +292,10 @@ Therefore: Make sure the organization is compatible with the product architectur
 
 --
 
-- leer git en github
+- [leer](https://git-scm.com/book/) [git](http://www.neuro.polymtl.ca/tips_and_tricks/git) en open een [github](https://help.github.com) account
 --
 
-- gebruik markdown (.md)
+- gebruik markdown (.md) [rfc7763](https://tools.ietf.org/html/rfc7763)/[rfc7764](https://tools.ietf.org/html/rfc7764)
 
 --
 
@@ -192,12 +307,13 @@ Therefore: Make sure the organization is compatible with the product architectur
 
 --
 
-- meetups, cfgmgmtcamp, softwarecircus, DevOpsdays, etc
-  <br/>veelal gratis of goedkoop
+- ga naar [meetups](https://www.meetup.com/find/?allMeetups=true&radius=50&userFreeform=utrecht&mcName=Utrecht%2C+Utrecht%2C+NL&sort=member_count), [cfgmgmtcamp](https://cfgmgmtcamp.eu), [softwarecircus](https://www.youtube.com/watch?v=Xg8pKjnHGyM&index=7&list=PLzSGDpUWtiovTDzulhcHqnZDR__oJHAKQ), [DevOpsdays](http://www.devopsdays.org/events/2016-amsterdam/), [containerdays](http://www.containerdays.de) etc
+  - veelal gratis of goedkoop
+  - soms met community training
 
 --
 
-- neem abonnement op safaribooksonline.com
+- neem abonnement op [safaribooksonline](https://www.safaribooksonline.com/home/)
 
 ---
 ## Stap twee
