@@ -6,10 +6,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <style type="text/css">
       @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
-      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,1000,1000italic);
-      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,1000,1000italic);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
 
-      body { font-family: 'Droid Serif'; font-size: 400%; }
+      body { font-family: 'Droid Serif'; font-size: 100%; }
 
       h1, h2, h3 {
         font-family: 'Yanone Kaffeesatz';
@@ -111,13 +111,13 @@ to convert to PDF eg use https://github.com/astefanutti/decktape
 - Hello! I am: Bart
   <br/>`smartbit at gmail dot com`
 
-- Windows Applicatie Startup, near sourcing ontwikkelteam
+- Windows Applicatie _startup_, near sourcing ontwikkelteam
 
-- 20 jaar Trainer en Consultant
+- \>20 jaar Trainer en Consultant
 
-- switcher (http://blog.scottlowe.org/2016/01/08/full-stack-journey-ep001/)
+- [switcher](http://blog.scottlowe.org/2016/01/08/full-stack-journey-ep001/)
 
-- meetups en conferenties
+- [meetups](https://www.youtube.com/user/TheSmartbit) en conferenties
 
 ---
 
@@ -136,20 +136,8 @@ grep '^# ' index.html | grep -v '<br' | tr '#' '-'^C
 DevOps:
 - Continuous Delivery/Deployment
 - Continuous Integration
+- alles is code, immutable infrastructure
 
-
----
-
-## IT service managment
-
---
-
-```
-  In de business, de kelder of de cloud
-```
-
-  [David Cannon van Forrester](http://www.automatiseringgids.nl/nieuws/2016/11/it-service-manager-staat-op)
-  <br/>op Ngi-NGN congres 17 maart 2016
 
 ---
 ##Compute
@@ -162,14 +150,13 @@ DevOps:
 |containers|VM |Zones |
 --
 
-|OCI |  Docker|LXC |
+|[OCI](https://www.opencontainers.org) |  Docker|LXC |
 --
 
-|  |microservices|Monolitic|
-
-
+| [unikernels](http://dtrace.org/blogs/bmc/2016/01/22/unikernels-are-unfit-for-production/) |microservices|Monolithic|
 --
 
+___
 
 
 ---
@@ -192,7 +179,6 @@ DevOps:
 --
 
 |NVMe | SSD |[SLC](http://0b4af6cdc2f0c5998459-c0245c5c937c5dedcca3f1764ecc9b2f.r43.cf2.rackcdn.com/23105-fast16-papers-schroeder.pdf)|
-<!-- (eMLC drives exhibit higher RBER than the MLC, SLC drives are not generally more reliable than MLC) -->
 --
 
 |[SMR](https://en.wikipedia.org/wiki/Shingled_magnetic_recording)|WORM|TAPE|
@@ -200,12 +186,11 @@ DevOps:
 
 |[Quobyte](https://www.openstack.org/news/view/124/quobyte-releases-first-complete-fault-tolerant-storage-solution-for-openstack)|[ZFS](http://open-zfs.org/wiki/Distributions)|NTFS|
 --
+
 |EMC|NetApp|IBM|
 
 ___
 --
-
-VSAN
 
 ---
 
@@ -229,7 +214,7 @@ Oplossing : immutable infrastracture
 
 |Wired | Tired |Expired|
 |:---:|:---:|:----:|
-|L3|VxLAN/GRE|L2|
+|L3|VxLAN|L2|
 --
 
 |40Gbit|10Gbit|1Gbit|
@@ -244,7 +229,6 @@ Oplossing : immutable infrastracture
 
 |NuageNetwork|NSX|Nicera|
 
-
 ___
 --
 
@@ -252,44 +236,30 @@ ___
 - [DevOps Networking Forum](http://www.linux.com/sign-up-to-watch-devops-networking-forum-videos) 17 maart 2016 (videos)
 
 ---
-## Omgevingen
-
-- Docker
-- Kubernetes
-- CoreOS
-- Mesos / Mesposhere
-- Openshift
-- OpenStack
-- CloudStack
-
-
----
-##PAAS
-
+## Organisatie
 --
 
-- [Apcera](https://www.apcera.com)
-- [Cloud Foundry](http://pivotal.io/platform)
-
-
----
-## Organisatie
-
-
-### Conway's Law
+### Conway's Law (1968)
 ```
-  organizations which design systems
+  Organizations which design systems
   are constrained to produce designs which
   are copies of the communication structures of these organizations
 ```
-
-.right[Melvin Conway, 1968]
 
 --
 
 _Therefore_ :
   <br/>Make sure the organization is compatible with the product architecture
 
+___
+
+--
+
+```
+  IT service managment:  In de business, de kelder of de cloud
+```
+  [David Cannon van Forrester](http://www.automatiseringgids.nl/nieuws/2016/11/it-service-manager-staat-op)
+  <br/>op Ngi-NGN congres 17 maart 2016
 --
 
 ___
@@ -302,7 +272,29 @@ ___
 --
 
 |[ScrumBan](http://www.agilerecord.com/scrumban-‒-differently-agile/)|KanBan|Scrum|
+
+
+---
+## Omgevingen (1/2)
+
+### Schedulers
+- Docker Swarm
+- Kubernetes
+- CoreOS
+- Mesos / Mesposhere
 --
+
+### Cloud
+- OpenStack
+- CloudStack
+---
+
+## Omgevingen (2/2)
+
+##PAAS
+- [Apcera](https://www.apcera.com)
+- [Cloud Foundry](http://pivotal.io/platform)
+- OpenShift (RedHat)
 
 
 
@@ -346,23 +338,14 @@ Kies een specialisatie
 
 - Databases (Graph, Cassandra, ProgreSQL)
 
---
-
 - Compute (Kubernetes, Docker, Mesos)
-
---
 
 - PAAS Platform ()
 
---
-
 - Storage (CEPH, )
 
---
 
 - Networking ()
-
---
 
 - Cloud Security
 
@@ -370,32 +353,46 @@ Kies een specialisatie
 
 - Backup (& Restore)
 ---
+## Kies een platform
+
+- AWS
+- Kubernetes
+- CloudStack
+- Openstack
+- Cloud Foundry
+
+---
+
+## Certificeringen
+
+- AWS
+- Azure (ASM \> ARM)
+- GCE
+
+## Ontwikkelen
+- Ansible (yaml)
+- Jenkins
+- TerraForm
+-
+
 
 # Conclusie
 
-- Slechte Nieuws: leve de koeien🐄🐮, dood huisdieren😼🐕
+- Slechte Nieuws: het gaat snel
 
   - it's not all unicorns🦄, ponies, and rainbows
 
-  - *Nee, Docker maakt je baan niet overbodig*
+  - leren, leren, leren
+--
 
 - Good news: ook met Cloud technieken is er werk voor *Operations*
 
+  - *Nee, Docker maakt je baan niet overbodig*
+
   - building, packaging, distributing apps
 
-  - running distributed systems on clusters
+  - leren, leren, leren
 
-
----
-
-## "This is complicated"
-
-
----
-
-## What's next?
-
--
 
 ---
 
