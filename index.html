@@ -137,6 +137,7 @@ DevOps:
 - Continuous Delivery/Deployment
 - Continuous Integration
 - alles is code, immutable infrastructure
+- [12 factor apps](http://12factor.net)
 
 
 ---
@@ -208,7 +209,7 @@ ___
 --
 
 Oplossing : immutable infrastracture
-Alles is code, geen _klikken_ meer als systeembeheerder.
+<br/>Alles is code, geen _klikken_ meer als systeembeheerder.
 ---
 ## Networking
 --
@@ -237,7 +238,7 @@ ___
 - [DevOps Networking Forum](http://www.linux.com/sign-up-to-watch-devops-networking-forum-videos) 17 maart 2016 (videos)
 
 ---
-## Organisatie
+## Organisatie (1/2)
 --
 
 ### Conway's Law (1968)
@@ -256,29 +257,41 @@ ___
 
 --
 
+
 ```
   IT service managment:  In de business, de kelder of de cloud
 ```
   [David Cannon van Forrester](http://www.automatiseringgids.nl/nieuws/2016/11/it-service-manager-staat-op)
   <br/>op Ngi-NGN congres 17 maart 2016
---
 
+---
+## Organisatie (2/2)
+
+Fortune 100 asks
+```
+Is there some way we can do DevOps without changing anything?
+```
+[Andrew Clay Shafer](https://www.youtube.com/watch?v=P_sWGl7MzhU&t=1173)
 ___
+
+--
 |Wired | Tired |Expired|
 |:---:|:---:|:----:|
-|No-Ops|DevOps|ITIL|
+|[No-Ops](https://www.youtube.com/watch?v=Xg8pKjnHGyM&t=85)|[DevOps](http://itrevolution.com/books/phoenix-project-devops-book/)|ITIL|
 --
 
 |Lean|iterative|waterfall|
 --
 
 |[ScrumBan](http://www.agilerecord.com/scrumban-‒-differently-agile/)|KanBan|Scrum|
+--
 
+|Lerende organisatie|bottum-up|top-down|
 
 ---
 ## Omgevingen (1/2)
 
-### Schedulers
+### [Orchestration](https://www.youtube.com/watch?v=_uw1ISM_uRU)
 - Docker Swarm
 - Kubernetes
 - CoreOS
@@ -300,7 +313,7 @@ ___
 
 
 ---
-## Eerste stappen
+# Eerste stappen
 
 - stap over naar dagelijks gebruik Linux/Unix, bv
   - Apple (2008 laptop [€300](http://www.marktplaats.nl/z/computers-en-software/laptops-apple/zo-goed-als-nieuw-gebruikt-macbook-pro-15-inch.html?categoryId=325&priceTo=400%2C00&attributes=S%2C31&attributes=S%2C32&attributes=S%2C2373&attributes=S%2C2369&startDateFrom=always))
@@ -334,27 +347,25 @@ ___
 - neem abonnement op [safaribooksonline](https://www.safaribooksonline.com/home/)
 
 ---
-## Stap twee
+# Stap twee (1/4)
+Kies een specialisatie, platform, certificering of automation.
+--
 
-Kies een specialisatie
+##Kies een specialisatie
 
 - Databases (Graph, Cassandra, ProgreSQL)
-
 - Compute (Kubernetes, Docker, Mesos)
-
 - PAAS Platform
-
 - Storage (CEPH, Flocker)
-
-- Networking ()
-
+- Networking
 - Cloud Security
-
 - Backup (& Restore)
 
 ---
+# Stap twee (2/4)
+Kies een specialisatie, platform, certificering of automation.
 
-## Kies een platform
+## Óf kies een platform
 
 - AWS
 - Kubernetes
@@ -366,21 +377,31 @@ Kies een specialisatie
 - Azure
 
 ---
+# Stap twee (3/4)
+Kies een specialisatie, platform, certificering of automation.
 
-## Certificeringen
+## Óf haal een Certificeringen
 
 - AWS
 - Azure (😬ASM → ARM)
 - GCE
 - RHCE
+- Security ([CCSK](https://cloudsecurityalliance.org/education/ccsk/), [CCSP](https://www.isc2.org/ccsp/default.aspx), ...)
 
-## Automation
-- Ansible (yaml)
+---
+# Stap twee (4/4)
+Kies een specialisatie, platform, certificering of automation.
+
+
+## Óf kies een _automation_
+- [Ansible](https://www.ansible.com/webinars-training) (yaml)
 - [Jenkins](https://jenkins-ci.org)
-- TerraForm
+- [TerraForm](https://www.airpair.com/aws/posts/ntiered-aws-docker-terraform-guide)
 - [JuJu](https://jujucharms.com/store)
   <br/>Juju introductie [playlist](https://www.youtube.com/watch?v=yuIt8D5ijYQ&list=PLzSGDpUWtiotngRgVqpa8jeCBQ2CCjzfo), febr 2016
-  <br/>Begint met Mark Shuttleworth die het mooi treft met een mop over een programmeur in '90-er jaren. En dan de parallelen trekt naar _Configuration Management_ in 2016.
+  <br/>Begint met Mark Shuttleworth die een mop vertelt over een programmeur in '90-er jaren. En dan de parallelen trekt naar _Configuration Management_ in 2016.
+
+(beter geen Puppet of Chef, te veel _enterpise_)
 
 ---
 # Conclusie
@@ -389,7 +410,7 @@ Kies een specialisatie
 
   - it's not all unicorns🦄, ponies🐴, and rainbows🌈
 
-  - leren, leren, leren
+  - leren, leren, [leren](Seven Sins of Scrum and other Agile Antipatterns)
 --
 
 - Good news: ook met Cloud technieken is er werk voor *Operations*
@@ -398,7 +419,7 @@ Kies een specialisatie
 
   - building, packaging, distributing apps
 
-  - leren, leren, leren
+  - [leren](https://www.youtube.com/watch?v=P_sWGl7MzhU&t=1204), leren, leren
 
 
 ---
